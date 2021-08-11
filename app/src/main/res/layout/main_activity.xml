@@ -1,19 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical" >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnfrag1"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="frag1" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnfrag2"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:text="frag2" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnfrag3"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="frag 3" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/novaActivity"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="Nova atv" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:id="@+id/conteiner1" />
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:id="@+id/conteiner2" />
+        android:id="@+id/container" />
+
+
+
 </LinearLayout>
