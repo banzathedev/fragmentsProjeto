@@ -1,3 +1,5 @@
 package com.proway.projetofragments.model
 
-data class Produtos()
+data class Produtos(
+    val nome : String
+)
