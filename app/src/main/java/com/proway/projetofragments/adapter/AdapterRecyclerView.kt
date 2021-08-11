@@ -36,7 +36,7 @@ class AdapterRecyclerView( val productsLista: MutableList<Produtos>) : RecyclerV
 }
 
 class produtosViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    var name = view.findViewById<TextView>(R.id.itemName)
+    var name = view.findViewById<TextView>(R.id.itemNameOrModel)
     fun bind(produtos: Produtos) {
         name.text = produtos.nome
         }
